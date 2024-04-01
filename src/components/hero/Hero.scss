@@ -1,0 +1,184 @@
+@import '../../styles/mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Sora:wght@100..800&display=swap');
+
+
+.hero{
+    margin-top: 4.5rem;
+
+    &_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 4rem;
+        margin-top: 10rem;
+    }
+
+    &_left {
+        padding-block: 5rem;
+    }
+
+    .hero_left_references {
+        display: flex;
+        align-items: center;
+        margin-top: 55px;
+        position: absolute;
+        
+    
+        a {
+            margin-right: 10px; 
+            border: 2px solid #A71616;
+            border-radius: 50px;
+            color: var(--primary-color);
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 50px; 
+            height: 50px;
+            
+            img {
+                flex-grow: 0;
+                padding: 3px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        #linkedin{
+            width: 45px;
+            height: 45px;
+        }
+
+        #instagram{
+            width: 40px;
+            height: 40px;
+        }
+
+        #email{
+            width: 45px;
+            height: 45px;
+        }
+
+        #github{
+            width: 45px;
+            height: 45px;
+        }
+    
+        #curriculum {
+            font-size: 22px; 
+            padding: 10px;
+            border-radius: 50px;
+            border: solid 6px #a71616;
+            margin: 0px 22px 0px 0px;
+            gap: 10px;
+            width: 245px;
+            height: 67px;
+            flex-grow: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    h3{
+        width: 222px;
+        height: 45px;
+        font-size: 36px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #f4f1f1;
+    }
+
+    h1{
+        width: 560px;
+        height: 162px;
+        background-image: linear-gradient(to right, #de152d, #fff);
+        font-size: 64px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+        @include respond(phone){
+            font-size: 5rem;
+        }
+    }
+
+    h4{
+        width: 605px;
+        height: 105px;
+        font-size: 28px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #f4f1f1;
+    }
+
+    .hi{
+        z-index: -2;
+        color: rgba(255, 255, 255, 0);
+        -webkit-text-stroke: 3px rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 45%;
+        left: 46%;
+        transform: translate(-45%, -80%);
+        width: 394px;
+        height: 412px;
+        margin: 225px 71px 143px 22px;
+        font-family: "Russo One", sans-serif;
+        font-size: 342px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+    }
+}
+
+.hero_right-img{
+    width: 438px;
+    height: 545px;
+    transform: rotate(-354.91deg) translate(26%, -5%);
+    border-radius: 62px;
+    border: solid 3px #a71616;
+    background-image: url("../../assets/charliegreen.jpg");
+    background-repeat: no-repeat;
+    background-size: 30rem;
+    background-position: center;
+}
+
+.lightShadow{
+    position: absolute;
+    z-index: -3;
+    width: 343px;
+    padding: 230px 321px 533px 100px;
+    -webkit-filter: blur(340px);
+    filter: blur(240px);
+    background-image: radial-gradient(circle at 55% 40%, #e86a6a, #5d0c0c 84%);
+    transform: translate(-45%, -95%);
+}
+
+.lightShadow2{
+    position: absolute;
+    z-index: -3;
+    width: 443px;
+    padding: 230px 321px 533px 100px;
+    -webkit-filter: blur(340px);
+    filter: blur(240px);
+    background-image: radial-gradient(circle at 55% 40%, #e86a6a, #5d0c0c 84%);
+    transform: translate(200%, -80%);
+}
+

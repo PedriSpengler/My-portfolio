@@ -1,4 +1,4 @@
-import './navbar.scss';
+import './Navbar.scss';
 import Logo from "../../assets/Icon Pedri.png";
 import { useState } from 'react';
 import { IoMenu } from "react-icons/io5";
@@ -6,7 +6,7 @@ import { IoClose } from "react-icons/io5";
 
 
 
-const navbar = () => {
+const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
   
   return <header className="navbar">
@@ -39,6 +39,7 @@ const navbar = () => {
 
             <div className="navbar_menu" onClick={() => setShowNav(!showNav)}>
                 {showNav ? <IoClose /> : <IoMenu />}
+                
             </div>
         </div>
     </div>
@@ -47,4 +48,4 @@ const navbar = () => {
   
 }
 
-export default navbar;
+export default Navbar;

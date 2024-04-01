@@ -28,12 +28,30 @@ const Hero = () => {
                     <img id="github" src={GithubImg} alt="" />
                 </a>
             </div>
-            <span className="hi">HI</span>
+            <span className="hi">PEDRI</span>
             <div className="lightShadow"></div>
             <div className="lightShadow2"></div>
         </div>
         <div className="hero_right">
             <div className="hero_right-img"></div>
+        </div>
+        <div className="hero_description">
+            <div className="desc" id="yearsDiv">
+                <h3 id="yearsNum">4</h3>
+                <span id="yearsText">Years Of Experience</span>
+            </div>
+            <div className="desc" id="projectsDiv">
+                <h3 id="projectsNum">20+</h3>
+                <span id="projectsText">Projects Completeds</span>
+            </div>
+            <div className="desc" id="happyclientsDiv">
+                <h3 id="happyclientsNum">1.5K</h3>
+                <span id="happyclientsText">Happy Clients</span>
+            </div>
+            <div className="desc" id="followersDiv">
+                <h3 id="followersNum">1K</h3>
+                <span id="followersText">Followers</span>
+            </div>
         </div>
     </div>
   </section>

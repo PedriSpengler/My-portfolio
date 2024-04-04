@@ -3,11 +3,17 @@ import LinkedinImg from "../../assets/linkedin.png";
 import InstagramImg from "../../assets/instagram.png";
 import EmailImg from "../../assets/gmail.png";
 import GithubImg from "../../assets/github.png";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Hero = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000});
+    });
   return <section className="hero">
     <div className="hero_container wrapper">
-        <div className="hero_left">
+        <div className="hero_left" data-aos="fade-up">
             <h3>Hi, I'm Pedri</h3>
             <h1>Web Developer + <br />
             UX Designer
@@ -32,10 +38,10 @@ const Hero = () => {
             <div className="lightShadow"></div>
             <div className="lightShadow2"></div>
         </div>
-        <div className="hero_right">
+        <div className="hero_right" data-aos="fade-left">
             <div className="hero_right-img"></div>
         </div>
-        <div className="hero_description">
+        <div className="hero_description wrapper">
             <div className="desc" id="yearsDiv">
                 <h3 id="yearsNum">4</h3>
                 <span id="yearsText">Years Of Experience</span>

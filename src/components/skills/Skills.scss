@@ -1,0 +1,67 @@
+@import '../../styles/mixins.scss';
+
+.skills {
+    height: 769px;
+    background-color: var(--background2-color);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+    h3 {
+        width: 248px;
+        height: 56px;
+        margin: 0 3px 82.2px 4px;
+        background-image: linear-gradient(to right, #de172f, #fff);
+        font-family: Sora;
+        font-size: 40px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .languages {
+        display: flex;
+        flex-wrap: wrap; /* Adicionado para permitir quebra de linha */
+        align-items: flex-start;
+        margin: 0 100px; /* Adicionado para margem esquerda e direita */
+        gap: 79px; /* Adicionado para espaço entre os boxes */
+    }
+
+    #box {
+        width: 119px;
+        height: 139px;
+        display: flex;
+        flex-direction: column; /* Alterado para alinhar itens em uma coluna */
+        justify-content: flex-start;
+        align-items: center; /* Ajustado para centralizar os itens horizontalmente */
+        gap: 10px;
+        padding: 32px 22px;
+        border-radius: 18px;
+        background-color: #3e0101;
+
+        span {
+            width: 75px;
+            height: 20px;
+            margin: 0; /* Removido as margens anteriores */
+            font-family: Sora;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center; /* Ajustado para centralizar o texto */
+            color: #fff;
+        }
+
+        .uiux{
+            width: 4.75rem;
+        }
+    }
+}

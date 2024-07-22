@@ -18,10 +18,13 @@ const Navbar = () => {
         <div className='navbar_links'>
             <ul className={`${showNav ? "show" : ""}`}>
                 <li onClick={() => setShowNav(false)}>
-                    <a href="/">Services</a>
+                    <a href="/">Home</a>
                 </li>
                 <li onClick={() => setShowNav(false)}>
                     <a href="/">Resume</a>
+                </li>
+                <li onClick={() => setShowNav(false)}>
+                    <a href="/">Services</a>
                 </li>
                 <li onClick={() => setShowNav(false)}>
                     <a href="/">Skills</a>

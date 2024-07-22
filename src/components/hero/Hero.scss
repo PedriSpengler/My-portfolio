@@ -4,6 +4,7 @@
 
 .hero{
     margin-top: 4.5rem;
+    height: 780px;
 
     &_container{
         display: grid;
@@ -192,7 +193,7 @@
         gap: 40px;
         padding: 0;
         max-width: 1320px;
-        margin-top: 800px;
+        margin-top: 950px;
         padding-inline: 20px;
 
         @include respond(tab-land) {

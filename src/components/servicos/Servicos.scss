@@ -1,0 +1,116 @@
+@import '../../styles/mixins.scss';
+
+.servicos {
+    height: 769px;
+    background-color: var(--background1-color);
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    padding-top: 20px; 
+
+    h3 {
+        width: 468px;
+        height: 58px;
+        flex-grow: 0;
+        background-image: linear-gradient(to right, #de172f, #fff);
+        font-family: Sora;
+        font-size: 40px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10px; // Ajuste o valor conforme necessário para menos espaçamento
+    }
+
+    span {
+        width: 924px;
+        height: 46px;
+        flex-grow: 0;
+        font-family: Sora;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #f4f1f1;
+    }
+
+    .servicoNum {
+        width: 1240px;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        height: auto; // Altura ajustável para acomodar todos os elementos
+        flex-grow: 0;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 43px;
+        padding: 0;
+        position: relative;
+
+        .num {
+            width: 40px;
+            height: 33px;
+            flex-grow: 0;
+            font-family: Sora;
+            font-size: 26px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #de172f;
+            margin-right: 20px;
+        }
+
+        .nome {
+            width: 275px;
+            height: 40px;
+            flex-grow: 0;
+            font-family: Sora;
+            font-size: 26px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #fff;
+            margin-right: 75px;
+        }
+
+        .desc {
+            width: 602px;
+            height: 46px;
+            flex-grow: 0;
+            font-family: Sora;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #f4f1f1;
+        }
+
+        .line {
+            width: 1240px;
+            height: 0.5px;
+            flex-grow: 0;
+            background-color: #fff;
+            margin-top: 90px; // Espaçamento abaixo de .desc, .nome e .num
+            position: absolute;
+        }
+    }
+}

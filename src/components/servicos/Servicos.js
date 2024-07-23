@@ -3,6 +3,7 @@ import "aos/dist/aos.css";
 
 const Servicos = () => {
     return <section className="servico section-padding">
+        <div className="light-shadow"></div>
         <div className="section-title servicos">
             <h3>My Quality Services</h3>
             <span>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</span>

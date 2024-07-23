@@ -27,6 +27,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
         }
     
         span {
@@ -45,6 +46,38 @@
             color: #f4f1f1;
 
         }
+        
+        .info-projetos{
+            width: 1183px;
+            height: 346px;
+            margin: 43px 0 0;
+            padding: 36px 46px 37px 45px;
+            border-radius: 20px;
+            background-color: rgba(37, 0, 0, 0.4);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .container{
+            width: 285px;
+            height: 285px;
+            flex-grow: 0;
+            border-radius: 2rem;
+            background-color: rgb(98, 44, 44);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 280px;
+                height: 280px;
+                flex-grow: 0;
+                border-radius: 2rem;
+            }
+        }
+
     }
 
 }

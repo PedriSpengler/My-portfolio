@@ -3,13 +3,16 @@
 .projetos {
     height: 769px;
     background-color: var(--background1-color);
-
+    z-index: -1;
+    
+    
     .projeto{
         display: flex;
         flex-direction: column; 
         justify-content: flex-start; 
         align-items: center;
-        z-index: -1;
+        z-index: 3;
+
 
 
         h3 {
@@ -82,6 +85,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 3;
 
             img{
                 width: 280px;
@@ -93,13 +97,32 @@
 
         .setaesq{
             margin-top: 1.2rem;
-            transform: rotate(180deg)
+            transform: rotate(180deg);
+            z-index: 3;
         }
 
         .setadir{
             margin-top: 1.2rem;
+            z-index: 3;
         }
 
+
     }
+
+    .lightshadow{
+        position: absolute;
+        top: 520%;
+        left: 5%;
+        width: 308px;
+        height: 308px;
+        position: absolute;
+        padding: 130px 220px 333px 40px;
+        -webkit-filter: blur(340px);
+        filter: blur(240px);
+        background-image: radial-gradient(circle at 55% 40%, #e86a6a, #5d0c0c 84%);
+        transform: translate(-45%, -95%);
+        z-index: 2; // Certifique-se de que o shadow fique atrás do conteúdo principal
+    }
+
 
 }

@@ -47,7 +47,14 @@
 
         }
         
-        .info-projetos{
+        .projetos-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .info-projetos {
             width: 1183px;
             height: 346px;
             margin: 43px 0 0;
@@ -58,6 +65,12 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+        }
+        
+        .setaesq, .setadir {
+            height: auto;
+            margin: 0 20px; /* Ajuste a margem conforme necessário */
+            width: 20px;
         }
 
         .container{
@@ -76,6 +89,15 @@
                 flex-grow: 0;
                 border-radius: 2rem;
             }
+        }
+
+        .setaesq{
+            margin-top: 1.2rem;
+            transform: rotate(180deg)
+        }
+
+        .setadir{
+            margin-top: 1.2rem;
         }
 
     }

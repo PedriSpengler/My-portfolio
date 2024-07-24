@@ -2,9 +2,6 @@ import "./Projetos.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Publi1 from '../../assets/publi1.jpg';
-import Publi2 from '../../assets/publi2.jpg';
-import Publi3 from '../../assets/publi3.jpg';
 import Seta from '../../assets/seta.png';
 
 const Projetos = () => {
@@ -18,13 +15,13 @@ const Projetos = () => {
                     <img className="setaesq" src={Seta} alt="" />
                     <div className="info-projetos">
                         <div className="container">
-                            <img src={Publi1} alt="" />
+                            <div className="bg1"></div>
                         </div>
                         <div className="container">
-                            <img src={Publi2} alt="" />
+                            <div className="bg2"></div>
                         </div>
                         <div className="container">
-                            <img src={Publi3} alt="" />
+                            <div className="bg3"></div>
                         </div>
                     </div>
                     <img className="setadir" src={Seta} alt="" />

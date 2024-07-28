@@ -27,28 +27,30 @@
 
     .languages {
         display: flex;
-        flex-wrap: wrap; /* Adicionado para permitir quebra de linha */
+        flex-wrap: wrap; 
         align-items: flex-start;
-        margin: 0 100px; /* Adicionado para margem esquerda e direita */
-        gap: 79px; /* Adicionado para espaço entre os boxes */
+        margin: 0 100px; 
+        gap: 79px; 
     }
 
     #box {
         width: 119px;
         height: 139px;
         display: flex;
-        flex-direction: column; /* Alterado para alinhar itens em uma coluna */
+        flex-direction: column; 
         justify-content: flex-start;
-        align-items: center; /* Ajustado para centralizar os itens horizontalmente */
+        align-items: center; 
         gap: 10px;
         padding: 32px 22px;
         border-radius: 18px;
         background-color: #3e0101;
+        transition: background-color 0.5s ease;
+        cursor: pointer;
 
         span {
             width: 75px;
             height: 20px;
-            margin: 0; /* Removido as margens anteriores */
+            margin: 0; 
             font-family: Sora;
             font-size: 16px;
             font-weight: normal;
@@ -56,12 +58,16 @@
             font-style: normal;
             line-height: normal;
             letter-spacing: normal;
-            text-align: center; /* Ajustado para centralizar o texto */
+            text-align: center; 
             color: #fff;
         }
 
         .uiux{
             width: 4.75rem;
         }
+    }
+
+    #box:hover {
+        background-color: transparent;
     }
 }

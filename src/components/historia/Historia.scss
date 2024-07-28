@@ -1,0 +1,111 @@
+@import '../../styles/mixins.scss';
+
+
+.historia {
+    height: 769px;
+    background-color: var(--background2-color);
+    display: flex;
+    justify-content: space-between;
+
+    .historias{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center;
+        width: 500px;
+        margin-left: 139px;
+
+        h3 {
+            width: 280px;
+            height: 54.1px;
+            background-image: linear-gradient(to right, #de172f, #fff);
+            font-family: Sora;
+            font-size: 40px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    
+        span {
+            z-index: 3;
+            width: 420px;
+            height: 46px;
+            flex-grow: 0;
+            font-family: Sora;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #f4f1f1;
+            word-wrap: break-word;
+        }
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .quadros{
+            width: 636px;
+            height: 417px;
+            z-index: 2;
+            margin-right: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 24px;
+    
+    
+            .quadro1{
+                width: 306px;
+                height: 417px;
+                border-radius: 20px;
+                background-color: #3e0101;
+            }
+    
+            .quadro2{
+                width: 306px;
+                height: 417px;
+                border-radius: 20px;
+                background-color: #3e0101;
+            }
+        }
+    
+        .options {
+            display: flex;
+            justify-content: center; /* Ajuste conforme necessário */
+            align-items: center; /* Ajuste conforme necessário */
+            margin-top: 30px;
+            gap: 10px;
+            margin-right: 100px;
+
+            .option {
+                width: 14px;
+                height: 14px;
+                background-color: #3e0101;
+                border-radius: 50%; /* Certifica-se de que as bolinhas sejam redondas */
+            }
+
+            .option:hover{
+                background-color: white;
+                transition: background-color 0.5s ease;
+                cursor: pointer;
+            }
+        }
+        
+    }
+
+}

@@ -4,6 +4,8 @@ import Resume from './components/resume/Resumo';
 import Servicos from './components/servicos/Servicos';
 import Skills from './components/skills/Skills';
 import Projetos from './components/projetos/Projetos';
+import Historia from './components/historia/Historia';
+import Work from './components/work/Work';
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <Servicos/>
       <Skills/>
       <Projetos/>
+      <Historia/>
+      <Work/>
     </>
   );
 }

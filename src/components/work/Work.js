@@ -32,6 +32,7 @@ const Work = () => {
                 </div>
             </div>
             <div className="atributos">
+                <div className="lightshadow"></div>
                 <div className="elipse-tel">
                     <div className="telefone">
                         <img src={Telefone} alt="" />

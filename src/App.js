@@ -6,6 +6,7 @@ import Skills from './components/skills/Skills';
 import Projetos from './components/projetos/Projetos';
 import Historia from './components/historia/Historia';
 import Work from './components/work/Work';
+import Rodape from './components/rodape/Rodape';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Projetos/>
       <Historia/>
       <Work/>
+      <Rodape/>
     </>
   );
 }

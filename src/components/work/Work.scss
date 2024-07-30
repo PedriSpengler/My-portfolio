@@ -164,6 +164,7 @@
     width: 500px;
     height: 258px;
 
+
         .elipse-tel{
           display: flex;
           align-items: center;
@@ -364,5 +365,18 @@
 
             }
         }
+    }
+
+    .lightshadow {
+      position: absolute;
+      top: 720%;
+      left: 90%;
+      width: 308px;
+      height: 308px;
+      padding: 130px 220px 333px 40px;
+      filter: blur(240px);
+      background-image: radial-gradient(circle at 55% 40%, #e86a6a, #5d0c0c 84%);
+      transform: translate(-45%, -95%);
+      z-index: 3;
     }
 }

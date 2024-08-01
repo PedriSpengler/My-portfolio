@@ -11,7 +11,7 @@ const Hero = () => {
     useEffect(() => {
         Aos.init({ duration: 1000});
     });
-  return <section className="hero">
+  return <section id="home" className="hero">
     <div className="hero_container wrapper">
         <div className="hero_left" data-aos="fade-up">
             <h3>Hi, I'm Pedri</h3>
@@ -63,4 +63,4 @@ const Hero = () => {
   </section>
 };
 
-export default Hero
+export default Hero;

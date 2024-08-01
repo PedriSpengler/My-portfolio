@@ -5,7 +5,7 @@ import Loc from "../../assets/icon-endereco.png";
 
 
 const Work = () => {
-        return <section className="works section-padding">
+        return <section id="contact" className="works section-padding">
             <div className="section-title work">
                 <h3>Let's work together!</h3>
                 <span>I design and code beautifully simple things and i love what i do. Just simple like that!</span>

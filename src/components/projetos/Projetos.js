@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React,{ useRef } from "react";
 import "./Projetos.scss";
 import Seta from '../../assets/seta.png';
 
@@ -17,7 +17,7 @@ const Projetos = () => {
   };
 
   return (
-    <section className="projetos section-padding">
+    <section id="projects" className="projetos section-padding">
       <div className="lightshadow"></div>
       <div className="section-title projeto">
         <h3>My Projects</h3>

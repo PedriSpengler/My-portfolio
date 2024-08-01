@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import ImgUIUX from "../../assets/uiux.png";
 
 const Skills = () => {
-    return <section className="skills section-padding">
+    return <section id="skills" className="skills section-padding">
         <div className="section-title skills">
             <h3>My Skills</h3>
             <div className="languages">

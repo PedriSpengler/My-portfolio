@@ -1,5 +1,9 @@
 @import '../../styles/mixins.scss';
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 .navbar {
     padding-block: 1.2rem;

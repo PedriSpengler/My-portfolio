@@ -2,7 +2,7 @@ import "./Servicos.scss";
 import "aos/dist/aos.css";
 
 const Servicos = () => {
-    return <section className="servico section-padding">
+    return <section id="services" className="servico section-padding">
         <div className="light-shadow"></div>
         <div className="section-title servicos">
             <h3>My Quality Services</h3>

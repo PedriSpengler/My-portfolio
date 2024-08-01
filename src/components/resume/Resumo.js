@@ -1,10 +1,9 @@
 import "./Resumo.scss";
-import Aos from "aos";
 import "aos/dist/aos.css";
-import {useEffect} from "react";
+
 
 const Resumo = () => {
-  return <section className="resumo section-padding">
+  return <section id="resume" className="resumo section-padding">
     <div className="section-title experience">
       <h3 className="h3-exp">My Experience</h3>
       <div className="info-experience">

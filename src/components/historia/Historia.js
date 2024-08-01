@@ -1,7 +1,8 @@
 import "./Historia.scss";
+import Persona1 from "../../assets/persona1.jpg";
 
 const Historia = () => {
-    return <section className="historia section-padding">
+    return <section id="testimonials" className="historia section-padding">
         <div className="section-title historias">
             <h3>My Client's Stories</h3>
             <span>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</span>
@@ -9,7 +10,7 @@ const Historia = () => {
         <div className="container">
             <div className="quadros">
                 <div className="quadro1">
-
+            
                 </div>
                 <div className="quadro2">
 

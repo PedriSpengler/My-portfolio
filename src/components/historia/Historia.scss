@@ -73,14 +73,81 @@
                 width: 306px;
                 height: 417px;
                 border-radius: 20px;
-                background-color: #3e0101;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+
+                .name{
+                    width: 153px;
+                    height: 26px;
+                    flex-grow: 0;
+                    font-family: Sora;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    margin-top: 20px;
+                    color: #3e0101;
+                }   
+
+                p{
+                    text-align: center;
+                    padding: 10px 10px 0px 10px;
+                }
             }
     
             .quadro2{
                 width: 306px;
                 height: 417px;
                 border-radius: 20px;
-                background-color: #3e0101;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+                
+
+                .name{
+                    width: 153px;
+                    height: 26px;
+                    flex-grow: 0;
+                    font-family: Sora;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    margin-top: 20px;
+                    color: #3e0101;
+                }   
+
+                p{
+                    text-align: center;
+                    padding: 10px 10px 0px 10px;
+                }
             }
         }
     

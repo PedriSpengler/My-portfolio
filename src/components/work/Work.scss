@@ -1,155 +1,166 @@
 @import '../../styles/mixins.scss';
 
 .works {
-  height: 769px;
+  min-height: 48.07rem; // 609px
   background-color: var(--background1-color);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 1.25rem; // 20px
+
+  @include respond(tab-land) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include respond(tab-port) {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: auto; // Ajusta a altura mínima para telas menores
+  }
 
   .work {
-    width: 668px;
-    height: 600px;
+    width: 41.75rem; // 668px
+    height: 37.5rem; // 600px
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 17px;
-    margin: 62px 77px 0;
-    padding: 50px 58px;
-    border-radius: 20px;
+    gap: 1.06rem; // 17px
+    margin: 3.88rem 4.81rem 0; // 62px 77px 0
+    padding: 3.13rem 3.63rem; // 50px 58px
+    border-radius: 1.25rem; // 20px
     background-color: #250000;
 
+    @include respond(tab-land){
+      order: 2;
+    }
+
+    @include respond(tab-port) {
+      width: 95%; // Ajusta a largura para 95% da tela em resoluções tab-port
+      height: auto; // Ajusta a altura automaticamente
+    }
+
     h3 {
-      width: 476px;
-      height: 58px;
-      flex-grow: 0;
-      background-image: linear-gradient(to right, #de172f, #fff);
       font-family: Sora;
-      font-size: 40px;
+      font-size: 2.81rem; // 45px
       font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: left;
+      background-image: linear-gradient(to right, #de172f, #fff);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @include respond(tab-land){
+        font-size: 42px;
+    }
     }
 
     span {
-      width: 552px;
-      height: 69px;
-      flex-grow: 0;
+      width: 34.5rem; // 552px
       font-family: Sora;
-      font-size: 16px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: left;
+      font-size: 1rem; // 16px
       color: #f4f1f1;
+
+      @include respond(tab-port) {
+        width: 100%; // Ajusta a largura do texto para telas menores
+      }
     }
 
     .container-principal {
-      width: 546px;
-      height: auto;
+      width: 34.13rem; // 546px
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      gap: 30px;
-      padding: 0;
+      gap: 1.88rem; // 30px
+
+      @include respond(tab-land) {
+        width: 90%; // Ajusta a largura do container em resoluções tab-land
+      }
+
+      @include respond(tab-port) {
+        width: 100%; // Ajusta a largura do container em resoluções tab-port
+      }
 
       .espaco {
-        width: calc(50% - 15px);
-        height: 49px;
-        border-radius: 8px;
+        width: calc(50% - 0.94rem); // calc(50% - 15px)
+        height: 3.06rem; // 49px
+        border-radius: 0.5rem; // 8px
         background-color: #3e0101;
 
-        input{
-          height: 45px;
+        @include respond(tab-port) {
+          width: calc(100% - 0.5rem); // Ajusta a largura em resoluções tab-port
+        }
+
+        input {
+          height: 2.81rem; // 45px
           width: 100%;
           outline: none;
-          border-radius: 5px;
+          border-radius: 0.31rem; // 5px
           border: 1px solid #3e0101;
-          padding-left: 15px;
-          font-size: 16px;
-          border-bottom-width: 2px;
+          padding-left: 0.94rem; // 15px
+          font-size: 1rem; // 16px
           transition: all 0.3s ease;
         }
 
         input::placeholder {
-          color: black; 
+          color: black;
           opacity: 0.6;
         }
       }
     }
 
     #mensagem {
-      width: 546px;
-      height: 227px;
+      width: 34.13rem; // 546px
+      height: 14.19rem; // 227px
       flex-grow: 1;
-      border-radius: 8px;
+      border-radius: 0.5rem; // 8px
       background-color: #3e0101;
-      margin-top: 20px;
-      
+      margin-top: 1.25rem; // 20px
+
+      @include respond(tab-port) {
+        width: 100%; // Ajusta a largura em resoluções tab-port
+        height: auto; // Ajusta a altura automaticamente
+      }
+
       textarea {
         height: 100%;
         width: 100%;
         outline: none;
-        border-radius: 5px;
+        border-radius: 0.31rem; // 5px
         border: 1px solid #3e0101;
-        padding-left: 15px;
-        padding-top: 10px;
-        font-size: 16px;
-        border-bottom-width: 2px;
+        padding-left: 0.94rem; // 15px
+        padding-top: 0.63rem; // 10px
+        font-size: 1.06rem; // 17px
         transition: all 0.3s ease;
         resize: none;
         font-family: Sora;
-        font-size: 17px;
-        font-weight: normal;
-        line-height: normal;
       }
 
       input::placeholder {
-        color: black; 
+        color: black;
         opacity: 0.6;
       }
-    
-
     }
 
     .botao {
-      width: 172px;
-      height: 43px;
-      flex-grow: 0;
+      width: 10.75rem; // 172px
+      height: 2.69rem; // 43px
       display: flex;
-      flex-direction: row;
       justify-content: center;
       align-items: center;
-      gap: 10px;
-      padding: 12px 30px;
-      border-radius: 32px;
+      gap: 0.63rem; // 10px
+      padding: 0.75rem 1.88rem; // 12px 30px
+      border-radius: 2rem; // 32px
       background-color: #de172f;
       transition: background-color 0.3s ease;
 
       h4 {
-        width: 112px;
-        height: 19px;
-        flex-grow: 0;
         font-family: Sora;
-        font-size: 15px;
+        font-size: 0.94rem; // 15px
         font-weight: 600;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: left;
         color: #fff;
       }
     }
@@ -159,224 +170,139 @@
       cursor: pointer;
     }
   }
-
-  .atributos{
-    width: 500px;
-    height: 258px;
-
-
-        .elipse-tel{
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-
-            .telefone{
-              width: 70px;
-              width: 70px;
-              height: 70px;
-              flex-grow: 0;
-              padding: 13px 12px 14px 15px;
-              background-image: linear-gradient(to bottom, #de172f, #3e0101);
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-
-
-              img{
-                width: 35px;
-                height: 35px;
-                flex-grow: 0;
-              }
-            }
-
-            .info{
-              width: 202px;
-              height: 41px;
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-start;
-              align-items: flex-start;
-              gap: 3px;
-              margin: 0px 0 0px 21px;
-              padding: 0;
-
-              h5{
-                width: 49px;
-                height: 19px;
-                flex-grow: 0;
-                font-family: Sora;
-                font-size: 15px;
-                font-weight: 600;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: left;
-                color: #c4afaf;
-              }
-
-              h4{
-                width: 153px;
-                height: 19px;
-                flex-grow: 0;
-                font-family: Sora;
-                font-size: 15px;
-                font-weight: 600;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: left;
-                color: #fff;
-              }
-            }
-        }
-
-        .elipse-email{
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            .email{
-              width: 70px;
-              height: 70px;
-              flex-grow: 0;
-              padding: 14px 14px 15px 15px;
-              background-image: linear-gradient(to bottom, #de172f, #3e0101);
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-
-              img{
-                width: 35px;
-                height: 35px;
-                flex-grow: 0;
-              }
-            }
-            
-            .info{
-              width: 202px;
-              height: 41px;
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-start;
-              align-items: flex-start;
-              gap: 3px;
-              margin: 54px 0 54px 21px;
-              padding: 0;
-
-              h5{
-                width: 42px;
-                height: 19px;
-                flex-grow: 0;
-                font-family: Sora;
-                font-size: 15px;
-                font-weight: 600;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: left;
-                color: #c4afaf;
-              }
-
-              h4{
-                width: 202px;
-                height: 19px;
-                flex-grow: 0;
-                font-family: Sora;
-                font-size: 15px;
-                font-weight: 600;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: left;
-                color: #fff;
-              }
-            }
-
-        }
-
-        .elipse-end{
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-
-            .endereco{
-              width: 70px;
-              height: 70px;
-              flex-grow: 0;
-              background-image: linear-gradient(to bottom, #de172f, #3e0101);
-              border-radius: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-
-              img{
-                width: 35px;
-                height: 35px;
-                flex-grow: 0;
-              }
-            }
-
-            .info{
-              width: 202px;
-              height: 41px;
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-start;
-              align-items: flex-start;
-              gap: 3px;
-              margin: 0px 0 0px 21px;
-              padding: 0;
-              
-              h5{
-                width: 65px;
-                height: 19px;
-                flex-grow: 0;
-                font-family: Sora;
-                font-size: 15px;
-                font-weight: 600;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: left;
-                color: #c4afaf;
-              }
-
-              h4{
-                width: 164px;
-                height: 19px;
-                flex-grow: 0;
-                font-family: Sora;
-                font-size: 15px;
-                font-weight: 600;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: left;
-                color: #fff;
-              }
-
-            }
-        }
+  .atributos {
+    width: 31.25rem; // 500px
+    height: auto;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem; // Espaçamento entre os itens
+    margin: 0 auto; // Centraliza horizontalmente
+  
+    @include respond(tab-land) {
+      width: 100%; // Ajusta a largura em telas menores
+      height: auto; // Permite que a altura seja ajustada automaticamente
     }
+  
+    .elipse-tel, .elipse-email, .elipse-end {
+      display: flex;
+      align-items: center;
+      gap: 1rem; // Espaçamento entre elipse e info
+      width: 100%; // Ocupa toda a largura disponível
 
-    .lightshadow {
-      position: absolute;
-      top: 720%;
-      left: 90%;
-      width: 308px;
-      height: 308px;
-      padding: 130px 220px 333px 40px;
-      filter: blur(240px);
-      background-image: radial-gradient(circle at 55% 40%, #e86a6a, #5d0c0c 84%);
-      transform: translate(-45%, -95%);
-      z-index: 3;
+      @media (max-width: 1200px){
+        width:40%;
+      }
+  
+      .telefone, .email, .endereco {
+        width: 4.38rem; // 70px
+        height: 4.38rem; // 70px
+        background-image: linear-gradient(to bottom, #de172f, #3e0101);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        img {
+          width: 2.19rem; // 35px
+          height: 2.19rem; // 35px
+        }
+      }
+  
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; // Mantém o alinhamento à esquerda em telas grandes
+        text-align: left;
+        gap: 0.19rem; // 3px
+  
+        h5, h4 {
+          font-family: Sora;
+          font-size: 0.94rem; // 15px
+          font-weight: 600;
+        }
+  
+        h5 {
+          color: #c4afaf;
+        }
+  
+        h4 {
+          color: #fff;
+        }
+      }
     }
+  
+    .elipse-email, .elipse-end {
+      margin-top: 20px;
+    }
+  
+    // Ajustes para centralizar completamente os elementos em telas menores
+    @media (max-width: 900px) {
+      width: 100%; // Ocupa a largura total da tela em telas menores
+      justify-content: center;
+      align-items: center; // Centraliza o container em si
+  
+      .elipse-tel, .elipse-email, .elipse-end {
+        justify-content: center; // Centraliza o bloco de elipse e info
+        width: 100%; // Permite que cada linha ocupe a largura total
+        flex-direction: column; // Muda a direção para coluna em telas menores
+        gap: 1rem; // Mantém espaçamento entre elipse e info
+  
+        .info {
+          align-items: center; // Centraliza o texto ao centro
+          text-align: center; // Centraliza o texto
+          width: 100%; // Ocupa toda a largura da tela
+        }
+      }
+    }
+  
+    .elipse-email, .elipse-end {
+      margin-top: 20px;
+    }
+  
+    // Adiciona centralização para telas menores que 900px
+    @media (max-width: 900px) {
+      width: 100%; // Ajusta a largura do container para 100%
+      justify-content: center;
+      align-items: center;
+  
+      .elipse-tel, .elipse-email, .elipse-end {
+        justify-content: center; // Garante centralização horizontal
+        width: 100%; // Garante que os elementos ocupem 100% da largura disponível
+        gap: 1rem; // Mantém o espaçamento entre elipses e texto
+  
+        .info {
+          width: 100%; // Ajusta para ocupar toda a largura da tela em telas menores
+          text-align: center; // Centraliza o texto em telas menores
+        }
+      }
+    }
+  
+  
+    .elipse-email, .elipse-end {
+      margin-top: 20px;
+    }
+  }
+
+  
+
+  .lightshadow {
+    position: absolute;
+    top: 720%;
+    left: 90%;
+    width: 19.25rem; // 308px
+    height: 19.25rem; // 308px
+    padding: 8.13rem 13.75rem 20.81rem 2.5rem; // 130px 220px 333px 40px
+    filter: blur(15rem); // 240px
+    background-image: radial-gradient(circle at 55% 40%, #e86a6a, #5d0c0c 84%);
+    transform: translate(-45%, -95%);
+    z-index: 3;
+
+    @include respond(tab-port) {
+      width: 14rem; // Reduz o tamanho do blur em telas menores
+      height: 14rem; // Ajusta altura do blur
+    }
+  }
 }

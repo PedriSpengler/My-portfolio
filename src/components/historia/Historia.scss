@@ -17,11 +17,11 @@
         margin-left: 139px;
 
         h3 {
-            width: 280px;
-            height: 54.1px;
+            width: auto;
+            height: auto;
             background-image: linear-gradient(to right, #de172f, #fff);
             font-family: Sora;
-            font-size: 40px;
+            font-size: 45px;
             font-weight: bold;
             font-stretch: normal;
             font-style: normal;
@@ -33,6 +33,10 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 20px;
             text-align: center;
+
+            @include respond(tab-land){
+                font-size: 42px;
+            }
         }
     
         span {

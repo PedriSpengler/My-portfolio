@@ -38,6 +38,11 @@ html {
         list-style: none;
         transition: all 3s ease;
 
+        @include respond(tab-land){
+            gap: 2rem;
+            font-size: 16px;
+        }
+
         @include respond(tab-port){
             flex-direction: column;
             gap: 3.2rem;

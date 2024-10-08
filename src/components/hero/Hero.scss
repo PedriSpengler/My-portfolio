@@ -6,11 +6,24 @@
     margin-top: 4.5rem;
     height: 780px;
 
+    @include respond(tab-port){
+        margin-top: 0;
+    }
+
     &_container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         margin-top: 10rem;
+
+        @include respond(tab-port) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            margin-top: 0; 
+        }
     }
 
     &_left {
@@ -22,6 +35,12 @@
         align-items: center;
         margin-top: 55px;
         position: absolute;
+
+        @include respond(tab-port){
+            text-align: center;
+            width: auto; 
+            margin: 0;
+        }
         
     
         a {
@@ -109,6 +128,10 @@
             font-size: 30px;
             width: 200px;
         }
+
+        @include respond(tab-port){
+            font-size: 25px;
+        }
     }
 
     h1{
@@ -127,13 +150,12 @@
         -webkit-text-fill-color: transparent;
         
         @include respond(tab-land) {
-            font-size: 60px;
+            font-size: 58px;
             width: 530px;
         }
 
-
-        @include respond(phone){
-            font-size: 5rem;
+        @include respond(tab-port){
+            font-size: 52px;
         }
     }
 
@@ -150,8 +172,12 @@
         color: #f4f1f1;
 
         @include respond(tab-land) {
-            font-size: 23px;
+            font-size: 22px;
             width: 480px;
+        }
+
+        @include respond(tab-port){
+            font-size: 20px;
         }
     }
 
@@ -304,6 +330,14 @@
             }
         }
     }
+
+    h3, h1, h4 {
+        @include respond(tab-port) {
+            text-align: center;
+            width: auto; 
+            margin: 0; 
+        }
+    }
 }
 
 .hero_right-img{
@@ -312,20 +346,31 @@
     transform: rotate(-354.91deg) translate(26%, -5%);
     border-radius: 62px;
     border: solid 3px #a71616;
-    background-image: url("../../assets/charliegreen.jpg");
+    background-image: url("../../assets/pedri3.jpg");
     background-repeat: no-repeat;
     background-size: 30rem;
     background-position: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
 
     @include respond(tab-land) {
-        transform: translate(0%, -5%);
+        position: absolute; 
+        bottom: -10rem;
+        right: 0; 
         width: 300px;
         height: 370px;
+        justify-content: flex-end;
+        margin-right: 90px;
     }
 
     @include respond(tab-port) {
         display: none;
     }
+}
+
+.hero_right-img:hover {
+    transform: rotate(-360deg) translate(26%, -5%);
 }
 
 .lightShadow{
@@ -349,4 +394,3 @@
     background-image: radial-gradient(circle at 55% 40%, #e86a6a, #5d0c0c 84%);
     transform: translate(200%, -80%);
 }
-

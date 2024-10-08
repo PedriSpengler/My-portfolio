@@ -1,19 +1,23 @@
 @import '../../styles/mixins.scss';
 
+
+// SEÇÃO PRONTA !!! // Antes era height: 769;, porém, estava gerando conflito.  
+
 .skills {
-    height: 769px;
+    min-height: 609px;
     background-color: var(--background2-color);
     display: flex;
     flex-direction: column; 
     align-items: center;
+    
 
     h3 {
-        width: 248px;
-        height: 56px;
-        margin: 0 3px 82.2px 4px;
+        width: auto;
+        height: auto;
+        margin: 0 0px 82.2px 0px;
         background-image: linear-gradient(to right, #de172f, #fff);
         font-family: Sora;
-        font-size: 40px;
+        font-size: 45px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -23,14 +27,28 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @include respond(tab-land){
+            font-size: 42px;
+        }
     }
 
     .languages {
         display: flex;
         flex-wrap: wrap; 
         align-items: flex-start;
+        justify-content: flex-start; 
         margin: 0 100px; 
         gap: 79px; 
+
+        @include respond(tab-land) {
+            justify-content: center; // Centraliza os itens em telas menores
+        }
+
+        @include respond(tab-port) {
+            justify-content: center;
+            align-items: center; // Centraliza os itens verticalmente e horizontalmente
+        }
     }
 
     #box {
@@ -62,7 +80,7 @@
             color: #fff;
         }
 
-        .uiux{
+        img{
             width: 4.75rem;
         }
     }

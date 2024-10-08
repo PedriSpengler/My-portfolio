@@ -1,40 +1,77 @@
 @import '../../styles/mixins.scss';
 
-.rodape{
-    height: 365px;
-    padding: 44px 337px 105px 338px;
-    background-color: #250000;
+// SEÇÃO PRONTA !!!
 
-    .rodapes{
-        width: 765px;
+.rodape {
+    height: 305px;
+    background-color: #250000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .rodapes {
+        max-width: 765px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 30px;
 
-        img{
-            height: 102px;
+        img {
+            width: auto;
+            height: 80px;
             flex-grow: 0;  
-            padding: 18.5px 69px 6.5px 59px;
         }
-        
+
         ul {
+            min-width: 100px;
             display: flex;
             gap: 28px;
             list-style: none;
             margin: 0;
-            padding: 0; 
+            padding: 0;
             transition: all 3s ease;
             text-decoration: none;
+            display: flex;
+            flex-wrap: wrap; 
+            align-items: center;
+            justify-content: center; 
             
+            @include respond(tab-land) {
+                justify-content: center; // Centraliza os itens em telas menores
+                align-items: center;
+                min-width: 900px;
+            }
+
+            @include respond(tab-port) {
+                justify-content: center;
+                align-items: center; // Centraliza os itens verticalmente e horizontalmente
+                min-width: 400px;
+            }
+
+            @include respond(phone){
+                gap: 17px;
+                justify-content: center;
+                align-items: center; // Centraliza os itens verticalmente e horizontalmente
+                min-width: 300px;
+            }
+
             li {
                 list-style: none;
                 margin: 0;
                 padding: 0;
             }
         }
-        
+
+        h5 {
+            min-width: 337px;
+            
+            @include respond(phone){
+                min-width: 292.5px;
+                font-size: 13px;
+            }
+        }
+
         a {
             color: #fff;
             font-weight: bold;
@@ -43,15 +80,18 @@
             transition: color 1s ease, color 1s ease;
             text-decoration: none;
             list-style: none;
-    
+
             &:hover {
                 background-color: var(--primary-color);
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-                transition: background-color 2s ease, -webkit-background-clip 2s ease, -webkit-text-fill-color 2s ease; // Aumentando a duração da transição
+                transition: background-color 2s ease, -webkit-background-clip 2s ease, -webkit-text-fill-color 2s ease;
             }
-        
+
+            @include respond(phone){
+                font-size: 15px;
+            }
         }
     }
 }

@@ -59,7 +59,7 @@ const Navbar = () => {
                     </ul>
 
                     <div className="navbar_menu" onClick={() => setShowNav(!showNav)}>
-                        {showNav ? <IoClose /> : <IoMenu />}
+                        {showNav ? <IoClose className='icon-close' /> : <IoMenu className='icon-menu' />}
                     </div>
                 </div>
             </div>

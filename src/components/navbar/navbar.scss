@@ -38,6 +38,7 @@ html {
         list-style: none;
         transition: all 3s ease;
 
+
         @include respond(tab-land){
             gap: 2rem;
             font-size: 16px;
@@ -83,6 +84,14 @@ html {
     
     &_menu{
         display: none;
+        .icon-close{
+            cursor: pointer;
+        }
+
+        .icon-menu{
+            cursor: pointer;
+        }
+
 
         @include respond(tab-port){
             display: inline-block;
@@ -93,6 +102,7 @@ html {
 
     .show {
         display: flex;
+        margin-top: -50px;
     }
     
 }

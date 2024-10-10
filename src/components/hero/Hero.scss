@@ -362,6 +362,7 @@
         height: 370px;
         justify-content: flex-end;
         margin-right: 90px;
+        background-size: 20rem;
     }
 
     @include respond(tab-port) {

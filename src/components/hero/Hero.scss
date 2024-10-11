@@ -55,6 +55,11 @@
             height: 50px;
             transition: 0.5s ease;
 
+            @include respond(phone){
+                width: 35px;
+                height: 35px;
+            }
+
             &:hover{
                 border: solid 2px #fff;
                 color: #fff;
@@ -72,21 +77,41 @@
         #linkedin{
             width: 45px;
             height: 45px;
+
+            @include respond(phone){
+                width: 35px;
+                height: 35px;
+            }
         }
 
         #instagram{
             width: 40px;
             height: 40px;
+
+            @include respond(phone){
+                width: 30px;
+                height: 30px;
+            }
         }
 
         #email{
             width: 45px;
             height: 45px;
+
+            @include respond(phone){
+                width: 35px;
+                height: 35px;
+            }
         }
 
         #github{
             width: 45px;
             height: 45px;
+            
+            @include respond(phone){
+                width: 35px;
+                height: 35px;
+            }
         }
     
         #curriculum {
@@ -104,6 +129,12 @@
             justify-content: center;
             align-items: center;
             transition: 0.5s ease;
+
+            @include respond(phone){
+                width: 150px;
+                height: 40.98px;
+                font-size: 16px;
+            }
 
             &:hover{
                 border: solid 6px #fff;
@@ -157,6 +188,10 @@
         @include respond(tab-port){
             font-size: 52px;
         }
+
+        @include respond(phone){
+            font-size: 42px;
+        }   
     }
 
     h4{
@@ -178,6 +213,10 @@
 
         @include respond(tab-port){
             font-size: 20px;
+        }
+        
+        @include respond(phone){
+            font-size: 18px;
         }
     }
 
@@ -202,9 +241,23 @@
 
         @include respond(tab-land) {
             font-size: 220px;
-            width: 1000px;
+            width: auto;
             transform: translate(-20%, -5%);
         }
+
+        @include respond(tab-port){
+            font-size: 160px;
+            width: auto;
+            left: 30%;
+            top: 35%;
+        }
+
+        @include respond(phone){
+            font-size: 120px;
+            left: 10%;
+        }
+
+        
     }
 
     &_description{
@@ -225,8 +278,14 @@
         @include respond(tab-land) {
             padding-inline: 0.8rem;
             gap: 0px;
-            margin-top: 950px;
         }
+
+        @include respond(tab-port){
+            max-width: 630px;
+            margin-top: 700px;
+        }
+        
+        
 
         #yearsDiv{
             width: 181px;
@@ -245,9 +304,56 @@
         }
 
         #followersDiv{
-            width: 190px;
+            width: auto;
             height: 76px;
         }
+
+        @include respond(tab-port){
+            #yearsDiv{
+                width: 181px;
+                height: 76px;
+            }
+    
+            #projectsDiv{
+                width: 271px;
+                height: 76px;
+            }
+    
+            #happyclientsDiv{
+                width: 220px;
+                height: 76px;
+            
+            }
+    
+            #followersDiv{
+                width: 190px;
+                height: 76px;
+            }
+        }
+
+        @include respond(phone){
+            #yearsDiv{
+                width: 98px;
+                height: 76px;
+            }
+    
+            #projectsDiv{
+                width: 144px;
+                height: 76px;
+            }
+    
+            #happyclientsDiv{
+                width: 122px;
+                height: 76px;
+            
+            }
+    
+            #followersDiv{
+                width: 97px;
+                height: 76px;
+            }
+        }
+
         .desc{
             flex-grow: 0;
             display: flex;
@@ -256,6 +362,11 @@
             align-items: center;
             gap: 15px;
             padding: 0;
+
+            @include respond(tab-port){
+                gap: 5px;
+            }
+
 
             h3{
                 display: flex;
@@ -270,48 +381,59 @@
                 letter-spacing: normal;
                 text-align: left;
                 color: #fff;
+
+                @include respond(tab-port){
+                    font-size: 42px;
+                }
+
+                @include respond(tab-port){
+                    font-size: 36px;
+                }
+
+                @include respond(phone){
+                    font-size: 32px;
+                }
             }
 
             #yearsNum{
-                width: 41px;
-                height: 76px;
+                width: auto;
+                height: auto;
             }
 
             #projectsNum{
-                width: 120px;
-                height: 76px;
+                width: auto;
+                height: auto;
             }
 
             #happyclientsNum{
-                width: 126px;
-                height: 76px;
+                width: auto;
+                height: auto;
             }
 
             #followersNum{
-                width: 60px;
-                height: 76px;
+                width: auto;
+                height: auto;
             }
 
             #yearsText{
-                width: 128px;
-                height: 56px;
+                width: auto;
+                height: auto;
             }
 
             #projectsText{
-                width: 139px;
-                height: 56px;
+                width: 110px;
+                height: auto;
             }
 
             #happyclientsText{
-                width: 82px;
-                height: 56px;
+                width: 75px;
+                height: auto;
             }
 
             #followersText{
-                width: 107px;
-                height: 28px;
+                width: auto;
+                height: auto;
             }
-
 
             span{
                 display: flex;
@@ -327,6 +449,16 @@
                 letter-spacing: normal;
                 text-align: left;
                 color: #fff;
+                
+
+                @include respond(tab-port){
+                    font-size: 12px;
+                }
+
+                @include respond(phone){
+                    font-size: 11px;
+                }
+
             }
         }
     }

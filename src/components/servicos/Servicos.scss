@@ -161,7 +161,6 @@
         left: 24%;
         width: 308px;
         height: 308px;
-        position: absolute;
         width: 343px;
         padding: 130px 220px 333px 40px;
         -webkit-filter: blur(340px);
@@ -169,5 +168,23 @@
         background-image: radial-gradient(circle at 55% 40%, #e86a6a, #5d0c0c 84%);
         transform: translate(-45%, -95%);
         z-index: 2; // Certifique-se de que o shadow fique atrás do conteúdo principal
+
+        @include respond(tab-land) {
+            top: 310%;
+            left: 20%;
+            transform: translate(-45%, -90%); // Ajuste fino para tablets
+        }
+    
+        @include respond(tab-port) {
+            top: 380%;
+            left: 15%;
+            transform: translate(-40%, -85%); // Ajuste fino para telas ainda menores
+        }
+    
+        @include respond(phone) {
+            top: 320%;
+            left: 10%;
+            transform: none; // Remova transformações para telas de celulares
+        }
     }
 }

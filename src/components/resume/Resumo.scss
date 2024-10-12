@@ -1,30 +1,42 @@
 @import '../../styles/mixins.scss';
 
 .resumo {
-    height: 769px;
+    min-height: 769px;
     background-color: var(--background2-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: center; // Centraliza as seções horizontalmente
+    align-items: center; // Centraliza verticalmente
+    gap: 50px; // Adiciona espaço de 50px entre as seções
 
-    .info-education {
+    @include respond(tab-land){
+        gap: 40px;
+    }
+
+    @include respond(tab-port) {
+        gap: 25px;
+    }
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+
+    .info-education, .info-experience {
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start; // Alinha os itens ao início da coluna
     }
 
     h3 {
         width: auto;
         height: auto;
-        margin: 0 0 40px;
+        margin: 0 0 40px; // Remove o auto para evitar centralização
         background-image: linear-gradient(to right, #de172f, #fff 100%);
         font-family: Sora;
         font-size: 45px;
         font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
         line-height: normal;
-        letter-spacing: normal;
-        text-align: left;
+        text-align: left; // Alinha o texto à esquerda
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -32,16 +44,15 @@
 
         @include respond(tab-land) {
             font-size: 42px;
-            width: 240px;
+        }
+
+        @include respond(tab-port){
+            font-size: 38px;
         }
     }
 
-    .h3-exp {
-        margin-left: 100px;
-    }
-
-    .h3-edu {
-        margin-left: 0px;
+    .h3-exp, .h3-edu {
+        margin-bottom: 0; // Remove qualquer margem lateral para centralização perfeita
     }
 
     h4 {
@@ -51,13 +62,24 @@
         font-family: Sora;
         font-size: 16px;
         font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
         line-height: normal;
-        letter-spacing: normal;
         text-align: left;
         color: #de172f;
         margin-left: 20px;
+        display: flex;
+        align-items: center;
+
+        @include respond(tab-land){
+            font-size: 15px;
+        }
+
+        @media screen and (max-width: 800px) {
+            font-size: 13px;
+        }
+
+        @media screen and (max-width: 450px){
+            font-size: 12px;
+        }
     }
 
     h5 {
@@ -67,13 +89,22 @@
         font-family: Sora;
         font-size: 15px;
         font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
         line-height: normal;
-        letter-spacing: normal;
         text-align: left;
         color: #fff;
         margin-left: 20px;
+        
+        @include respond(tab-land){
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 800px) {
+            font-size: 13px;
+        }
+
+        @media screen and (max-width: 450px){
+            font-size: 12px;
+        }
     }
 
     h6 {
@@ -83,19 +114,28 @@
         font-family: Sora;
         font-size: 15px;
         font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
         line-height: normal;
-        letter-spacing: normal;
         text-align: left;
         color: #fff;
         margin-left: 20px;
+
+        @include respond(tab-land){
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 800px) {
+            font-size: 13px;
+        }
+
+        @media screen and (max-width: 450px){
+            font-size: 12px;
+        }
     }
 
     .quadro {
         width: 430px;
         height: 107px;
-        margin: 0 0 0 0;
+        margin: 0;
         border-radius: 20px;
         background-color: #3e0101;
         display: flex;
@@ -105,13 +145,30 @@
         &:not(:first-child) {
             margin-top: 42px;
         }
+
+        @include respond(tab-land){
+            width: 400px;
+            height: 88px;
+        }
+
+        @include respond(tab-port){
+            width: 380px;
+            height: 78px;
+        }
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            width: 400px;
+            height: 68px;
+        }
+
+        @media screen and (max-width: 450px){
+            width: 320px;
+            height: 78px;
+        }
     }
 
-    .exp-quadro {
-        margin-left: 100px;
-    }
-
-    .edu-quadro {
-        margin-right: 100px;
+    .exp-quadro, .edu-quadro {
+        margin: 0 auto; // Centraliza os quadros
     }
 }

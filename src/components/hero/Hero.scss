@@ -389,8 +389,8 @@
                 text-align: left;
                 color: #fff;
 
-                @include respond(tab-port){
-                    font-size: 42px;
+                @include respond(tab-land){
+                    font-size: 46px;
                 }
 
                 @include respond(tab-port){

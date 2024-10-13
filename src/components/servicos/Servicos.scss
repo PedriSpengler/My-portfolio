@@ -1,7 +1,8 @@
 @import '../../styles/mixins.scss';
 
 .servico{
-    height: 769px;
+    min-height: 100vh;
+    
 
     .servicos {
         background-color: var(--background1-color);
@@ -10,7 +11,7 @@
         justify-content: flex-start; 
         align-items: center;
         z-index: -1;
-        min-width: 500px;
+        min-width: 100%;
     
     
         h3 {
@@ -26,7 +27,7 @@
             font-style: normal;
             line-height: normal;
             letter-spacing: normal;
-            text-align: left;
+            text-align: center;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -35,12 +36,15 @@
             @include respond(tab-land){
                 font-size: 42px;
             }
+
+            @include respond(tab-port){
+                font-size: 38px;
+            }
         }
     
         span {
             z-index: 3;
             width: 924px;
-            height: 46px;
             flex-grow: 0;
             font-family: Sora;
             font-size: 16px;
@@ -52,15 +56,17 @@
             text-align: center;
             color: #f4f1f1;
 
-            @include respond(tab-land){
+            @include respond(tab-land) {
                 font-size: 14px;
+                width: auto;
+                margin: 10px;
             }
         }
         
-        .info-servicos{
-            
-
-            
+        .info-servicos {
+            @include respond(tab-port){
+                margin: 10px;
+            }
             .servicoNum {
                 z-index: 3;
                 width: auto; // Ajuste para ocupar a largura total disponível
@@ -77,6 +83,15 @@
                 padding: 0;
                 position: relative;
         
+                // Responsividade para tab-port (telas menores que 900px)
+                @include respond(tab-port) {
+                    flex-direction: column; // Muda para coluna
+                    align-items: flex-start; // Alinha à esquerda
+                    max-width: 100%; // Remove a limitação de largura
+                    gap: 20px; // Diminui o espaçamento entre os itens
+                    margin-top: 50px;
+                }
+        
                 .num {
                     width: auto;
                     height: auto;
@@ -84,16 +99,17 @@
                     font-family: Sora;
                     font-size: 26px;
                     font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
                     text-align: left;
                     color: #de172f;
                     margin-right: 20px;
-
-                    @include respond(tab-land){
+        
+                    @include respond(tab-land) {
                         font-size: 23px;
+                    }
+        
+                    @include respond(tab-port) {
+                        font-size: 20px; // Diminui o tamanho da fonte
+                        margin-right: 0; // Remove a margem
                     }
                 }
         
@@ -104,17 +120,19 @@
                     font-family: Sora;
                     font-size: 26px;
                     font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
                     text-align: left;
                     color: #fff;
                     margin-right: 75px;
-
-                    @include respond(tab-land){
+        
+                    @include respond(tab-land) {
                         font-size: 23px;
                         margin-right: 0px;
+                    }
+        
+                    @include respond(tab-port) {
+                        font-size: 20px; // Ajuste para telas menores
+                        margin-right: 0; // Remove margem
+                        width: 100%; // Largura total disponível
                     }
                 }
         
@@ -125,34 +143,40 @@
                     font-family: Sora;
                     font-size: 16px;
                     font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
                     text-align: left;
                     color: #f4f1f1;
-
-                    @include respond(tab-land){
+        
+                    @include respond(tab-land) {
                         font-size: 14px;
                         width: 410px;
+                    }
+        
+                    @include respond(tab-port) {
+                        font-size: 14px; // Mantém o tamanho, mas ajusta a largura
+                        width: 100%; // Largura total disponível
                     }
                 }
         
                 .line {
                     width: 998px;
                     height: 0.5px;
-                    flex-grow: 0;
                     background-color: #fff;
-                    margin-top: 90px; // Espaçamento abaixo de .desc, .nome e .num
+                    margin-top: 90px;
                     position: absolute;
-
-                    @include respond(tab-land){
+        
+                    @include respond(tab-land) {
                         width: 816px;
                     }
+        
+                    @include respond(tab-port) {
+                        width: 100%; // Largura total em telas menores
+                        position: relative; // Muda para relativo
+                        margin-top: 30px; // Diminui o espaçamento
+                    }
                 }
-
             }
         }
+        
     }
     
     .light-shadow{

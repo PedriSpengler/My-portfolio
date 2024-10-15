@@ -1,5 +1,4 @@
 import "./Historia.scss";
-import Persona1 from "../../assets/persona1.jpg";
 import Persona2 from "../../assets/persona2.jpg";
 import Persona3 from "../../assets/persona3.jpg";
 import React from "react";
@@ -20,11 +19,11 @@ const Historia = () => {
                         <img src={Persona3} alt="" />
                         <div className="name">Cesar Tavares</div>
                         <div className="stars">
-                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} />
-                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} />
-                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} />
-                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} />
-                            <FontAwesomeIcon icon={faStarRegular} style={{ color: "#350101" }} />
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela"/>
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela"/>
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela"/>
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela"/>
+                            <FontAwesomeIcon icon={faStarRegular} style={{ color: "#350101" }} className="estrela"/>
                         </div>
                         <p>
                             We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
@@ -34,11 +33,11 @@ const Historia = () => {
                         <img src={Persona2} alt="" />
                         <div className="name">William Nairuki</div>
                         <div className="stars">
-                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} />
-                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} />
-                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} />
-                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} />
-                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} />
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela"/>
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela" />
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela"/>
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela"/>
+                            <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela"/>
                         </div>
                         <p>
                             We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.

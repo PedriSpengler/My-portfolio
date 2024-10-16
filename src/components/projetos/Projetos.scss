@@ -27,16 +27,21 @@
       @include respond(tab-land){
         font-size: 42px;
       }
+
+      @include respond(tab-port){
+        font-size: 38px;
+      }
     }
 
     span {
-      width: 924px;
+      width: auto;
       height: 46px;
       font-family: Sora;
       font-size: 16px;
       font-weight: normal;
       text-align: center;
       color: #f4f1f1;
+      margin: 10px;
     }
 
     .projetos-wrapper {
@@ -45,6 +50,10 @@
       justify-content: center;
       width: 100%;
       position: relative;
+
+      @include respond(tab-land){
+        width: 80%;
+      }
 
       .setaesq, .setadir {
         height: auto;
@@ -58,12 +67,28 @@
       .setaesq {
         left: 100px;
         transform: translateY(-50%) rotate(180deg);
-        z-index: 3;
+        z-index: 5;
+
+        @include respond(tab-land){
+          left: -40px;
+        }
+
+        @include respond(phone){
+          left: -25px;
+        }
       }
 
       .setadir {
         right: 100px;
-        z-index: 3;
+        z-index: 5;
+
+        @include respond(tab-land){
+          right: -40px;
+        }
+
+        @include respond(phone){
+          right: -25px;
+        }
       }
 
       .info-projetos {
@@ -113,7 +138,7 @@
 
       .bg1:hover, .bg2:hover, .bg3:hover, .bg4:hover, .bg5:hover {
         transform: scale(1.2);
-        z-index: 5;
+        z-index: 4;
       }
     }
   }

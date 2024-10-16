@@ -139,6 +139,10 @@
       .bg1:hover, .bg2:hover, .bg3:hover, .bg4:hover, .bg5:hover {
         transform: scale(1.2);
         z-index: 4;
+
+        @include respond(tab-port){
+          transform: scale(1.1);
+        }
       }
     }
   }

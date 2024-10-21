@@ -20,17 +20,17 @@ const Hero = () => {
             </h1>
             <h4>I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people.</h4>
             <div className="hero_left_references">
-                <a href="/" id="curriculum">Download CV</a>
-                <a href="/">
+                <a href="/src/assets/CurriculoAtual.pdf" id="curriculum" download>Download CV</a>
+                <a href="https://www.linkedin.com/in/pedro-spengler-23476b259/">
                     <img id="linkedin" src={LinkedinImg} alt="" />
                 </a>
-                <a href="/">
+                <a href="https://www.instagram.com/pedrispengler/">
                     <img id="instagram" src={InstagramImg} alt="" />
                 </a>
-                <a href="/">
+                <a href="mailto:pedroj.oficial@gmail.com">
                     <img id="email" src={EmailImg} alt="" />
                 </a>
-                <a href="/">
+                <a href="https://github.com/PedriSpengler">
                     <img id="github" src={GithubImg} alt="" />
                 </a>
             </div>

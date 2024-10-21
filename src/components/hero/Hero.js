@@ -20,18 +20,19 @@ const Hero = () => {
             </h1>
             <h4>I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people.</h4>
             <div className="hero_left_references">
-                <a href="/src/assets/CurriculoAtual.pdf" id="curriculum" download>Download CV</a>
-                <a href="https://www.linkedin.com/in/pedro-spengler-23476b259/">
-                    <img id="linkedin" src={LinkedinImg} alt="" />
+                <a href="/CurriculoAtual.pdf" id="curriculum" download>Download CV</a>
+                <a href="https://www.linkedin.com/in/pedro-spengler-23476b259/" target="_blank" rel="noopener noreferrer">
+                    <img id="linkedin" src={LinkedinImg} alt="LinkedIn Profile" />
                 </a>
-                <a href="https://www.instagram.com/pedrispengler/">
-                    <img id="instagram" src={InstagramImg} alt="" />
+
+                <a href="https://www.instagram.com/pedrispengler/" target="_blank" rel="noopener noreferrer">
+                    <img id="instagram" src={InstagramImg} alt="Instagram Profile" />
                 </a>
-                <a href="mailto:pedroj.oficial@gmail.com">
-                    <img id="email" src={EmailImg} alt="" />
+                <a href="mailto:pedroj.oficial@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img id="email" src={EmailImg} alt="Email Profile" />
                 </a>
-                <a href="https://github.com/PedriSpengler">
-                    <img id="github" src={GithubImg} alt="" />
+                <a href="https://github.com/PedriSpengler" target="_blank" rel="noopener noreferrer">
+                    <img id="github" src={GithubImg} alt="Github Profile" />
                 </a>
             </div>
             <span className="hi">PEDRI</span>

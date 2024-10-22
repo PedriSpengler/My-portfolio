@@ -28,6 +28,47 @@
 
     &_left {
         padding-block: 5rem;
+
+        .idioma {
+            position: relative; /* O contêiner .idioma está posicionado relativamente */
+            width: 135px;
+            height: 60px;
+            flex-grow: 0;
+            padding: 0 75px 0 0;
+            border-radius: 59px;
+            background-color: #3e0101;
+            display: flex; /* Use flexbox para centralizar a imagem */
+            align-items: center; /* Alinha a imagem verticalmente no centro */
+            justify-content: center; /* Alinha a imagem horizontalmente no centro */
+            bottom: 50px;
+        
+            .elipse {
+                width: 60px; /* Largura da elipse */
+                height: 60px; /* Altura da elipse */
+                border-radius: 50%; /* Formato circular */
+                background-color: #250000; /* Cor de fundo da elipse */
+                position: absolute; /* Permite o movimento da elipse em relação ao contêiner */
+                transition: transform 0.5s ease; /* Transição suave para o movimento */
+                display: flex;
+                align-items: center;
+                /* Quando a classe move-right estiver presente */
+                &.move-right {
+                    transform: translateX(75px); /* Move a elipse para a direita */
+                    img{
+                        transform: translateX(9px);
+                    }
+                }
+
+        
+                img {
+                    width: 51px; /* Largura da imagem */
+                    cursor: pointer; /* Mão ao passar o mouse */
+                    position: relative; /* Para que a imagem se mova junto com a elipse */
+                    z-index: 1; /* Garante que a imagem fique sobre a elipse */
+                }
+            }
+        }
+        
     }
 
     .hero_left_references {

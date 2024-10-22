@@ -11,7 +11,7 @@ const Historia = () => {
         <section id="testimonials" className="historia section-padding">
             <div className="section-title historias">
                 <h3>My Client's Stories</h3>
-                <span>We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</span>
+                <span>We transform your vision into a one-of-a-kind web project that captivates both you and your audience, bringing your ideas to life in a way that truly stands out.</span>
             </div>
             <div className="container">
                 <div className="quadros">
@@ -26,7 +26,7 @@ const Historia = () => {
                             <FontAwesomeIcon icon={faStarRegular} style={{ color: "#350101" }} className="estrela"/>
                         </div>
                         <p>
-                            We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+                        Great service! The project was delivered on time and with high quality. It's a very positive experience!
                         </p>
                     </div>
                     <div className="quadro2">
@@ -40,7 +40,7 @@ const Historia = () => {
                             <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela"/>
                         </div>
                         <p>
-                            We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+                        Absolutely amazing experience! The team was professional and exceeded my expectations. I couldn’t be happier with the results!
                         </p>
                     </div>
                 </div>

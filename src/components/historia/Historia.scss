@@ -155,13 +155,14 @@
                 p {
                     text-align: center;
                     padding: 10px 10px 0px 10px;
+                    font-size: 15px;
 
                     @include respond(tab-port){
-                        font-size: 16px;
+                        font-size: 14px;
                     }
 
                     @include respond(phone){
-                        font-size: 15px;
+                        font-size: 13px;
                     }
                 }
             }

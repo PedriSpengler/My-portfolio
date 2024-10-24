@@ -68,6 +68,8 @@
         }
         
         .info-servicos {
+            padding: 2rem;
+
             @include respond(tab-port){
                 margin: 10px;
             }

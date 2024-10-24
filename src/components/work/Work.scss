@@ -88,9 +88,7 @@
       flex-wrap: wrap;
       gap: 1.88rem; // 30px
 
-      @include respond(tab-land) {
-        width: 90%; // Ajusta a largura do container em resoluções tab-land
-      }
+
 
       @include respond(tab-port) {
         width: 100%; // Ajusta a largura do container em resoluções tab-port
@@ -126,15 +124,14 @@
 
     #mensagem {
       width: 34.13rem; // 546px
-      height: 14.19rem; // 227px
+      height: 10.19rem; // 227px
       flex-grow: 1;
       border-radius: 0.5rem; // 8px
       background-color: #3e0101;
       margin-top: 1.25rem; // 20px
 
       @include respond(tab-port) {
-        width: 100%; // Ajusta a largura em resoluções tab-port
-        height: auto; // Ajusta a altura automaticamente
+        width: 99%; // Ajusta a largura em resoluções tab-port
       }
 
       textarea {
@@ -157,6 +154,22 @@
       }
     }
 
+    button {
+      all: unset;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: none;
+      font: inherit;
+      color: inherit;
+      text-align: inherit;
+      line-height: inherit;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+
     .botao {
       width: 10.75rem; // 172px
       height: 2.69rem; // 43px
@@ -168,6 +181,7 @@
       border-radius: 2rem; // 32px
       background-color: #de172f;
       transition: background-color 0.3s ease;
+      margin-top: 10px;
 
       h4 {
         font-family: Sora;

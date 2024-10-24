@@ -30,44 +30,88 @@
         padding-block: 5rem;
 
         .idioma {
-            position: relative; /* O contêiner .idioma está posicionado relativamente */
+            position: relative;
             width: 135px;
             height: 60px;
             flex-grow: 0;
             padding: 0 75px 0 0;
             border-radius: 59px;
             background-color: #3e0101;
-            display: flex; /* Use flexbox para centralizar a imagem */
-            align-items: center; /* Alinha a imagem verticalmente no centro */
-            justify-content: center; /* Alinha a imagem horizontalmente no centro */
+            display: flex;
+            align-items: center;
+            justify-content: center;
             bottom: 50px;
         
             .elipse {
-                width: 60px; /* Largura da elipse */
-                height: 60px; /* Altura da elipse */
-                border-radius: 50%; /* Formato circular */
-                background-color: #250000; /* Cor de fundo da elipse */
-                position: absolute; /* Permite o movimento da elipse em relação ao contêiner */
-                transition: transform 0.5s ease; /* Transição suave para o movimento */
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: #250000;
+                position: absolute;
+                transition: transform 0.5s ease;
                 display: flex;
                 align-items: center;
-                /* Quando a classe move-right estiver presente */
+        
                 &.move-right {
-                    transform: translateX(75px); /* Move a elipse para a direita */
-                    img{
+                    transform: translateX(75px);
+        
+                    img {
                         transform: translateX(9px);
                     }
                 }
-
         
                 img {
-                    width: 51px; /* Largura da imagem */
-                    cursor: pointer; /* Mão ao passar o mouse */
-                    position: relative; /* Para que a imagem se mova junto com a elipse */
-                    z-index: 1; /* Garante que a imagem fique sobre a elipse */
+                    width: 51px;
+                    cursor: pointer;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+        
+            
+        
+            @include respond(tab-port) {
+                width: 110px;
+                height: 50px;
+                padding: 0 60px 0 0;
+                .elipse {
+                    width: 50px;
+                    height: 50px;
+
+                    &.move-right {
+                        transform: translateX(60px);
+                        img {
+                            transform: translateX(7px);
+                        }
+                    }
+
+                    img {
+                        width: 45px;
+                    }
+                }
+            }
+            @include respond(phone) {
+                width: 90px;
+                height: 40px;
+                padding: 0 45px 0 0;
+                .elipse {
+                    width: 40px;
+                    height: 40px;
+        
+                    &.move-right {
+                        transform: translateX(45px);
+                        img {
+                            transform: translateX(5px);
+                        }
+                    }
+        
+                    img {
+                        width: 35px;
+                    }
                 }
             }
         }
+        
         
     }
 
@@ -185,8 +229,8 @@
     }
 
     h3{
-        width: 222px;
-        height: 45px;
+        width: auto;
+        height: auto;
         font-size: 36px;
         font-weight: bold;
         font-stretch: normal;
@@ -207,8 +251,8 @@
     }
 
     h1{
-        width: 560px;
-        height: 162px;
+        width: auto;
+        height: auto;
         background-image: linear-gradient(to right, #de152d, #fff);
         font-size: 64px;
         font-weight: bold;

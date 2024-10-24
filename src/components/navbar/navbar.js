@@ -2,9 +2,16 @@ import './Navbar.scss';
 import Logo from "../../assets/Icon Pedri.png";
 import { useState, useEffect } from 'react';
 import { IoMenu, IoClose } from "react-icons/io5";
+import '../hero/Hero.js';
+
+import '../../lib/i18n';
+import { useTranslation } from "react-i18next";
+
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
+
+    const { t } = useTranslation()
 
     useEffect(() => {
         const handleScroll = (e) => {
@@ -36,25 +43,25 @@ const Navbar = () => {
                 <div className='navbar_links'>
                     <ul className={`${showNav ? "show" : ""}`}>
                         <li onClick={() => setShowNav(false)}>
-                            <a href="#home">Home</a>
+                            <a href="#home">{t('nav1')}</a>
                         </li>
                         <li onClick={() => setShowNav(false)}>
-                            <a href="#resume">Resume</a>
+                            <a href="#resume">{t('nav2')}</a>
                         </li>
                         <li onClick={() => setShowNav(false)}>
-                            <a href="#services">Services</a>
+                            <a href="#services">{t('nav3')}</a>
                         </li>
                         <li onClick={() => setShowNav(false)}>
-                            <a href="#skills">Skills</a>
+                            <a href="#skills">{t('nav4')}</a>
                         </li>
                         <li onClick={() => setShowNav(false)}>
-                            <a href="#projects">Projects</a>
+                            <a href="#projects">{t('nav5')}</a>
                         </li>
                         <li onClick={() => setShowNav(false)}>
-                            <a href="#testimonials">Testimonials</a>
+                            <a href="#testimonials">{t('nav6')}</a>
                         </li>
                         <li onClick={() => setShowNav(false)}>
-                            <a href="#contact">Contact</a>
+                            <a href="#contact">{t('nav7')}</a>
                         </li>
                     </ul>
 

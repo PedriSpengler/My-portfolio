@@ -1,0 +1,59 @@
+{
+    "translation": {
+        "nav1": "Home",
+        "nav2": "Resume",
+        "nav3": "Services",
+        "nav4": "Skills",
+        "nav5": "Projects",
+        "nav6": "Testimonials",
+        "nav7": "Contact",
+
+        "heroH3": "Hi, I'm Pedri",
+        "heroH1": "Web Developer +",
+        "heroH1br": "UX Designer",
+        "heroH4": "I create intuitive, scalable systems by blending user experience design with full-stack technologies for maximum impact.",
+        "heroSPAN1": "Years Of Experience",
+        "heroSPAN2": "Projects Completed",
+        "heroSPAN3": "Happy Clients",
+        "heroSPAN4": "Followers",
+
+        "resH3EXP": "My Experience",
+        "resH3EDU": "My Education",
+
+        "servH3": "My Quality Services",
+        "servSPAN": "We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.",
+        "servNOME1": "Web Developer",
+        "servDESC1": "I transform complex requirements into seamless, efficient web solutions, building responsive and dynamic websites that deliver exceptional user experiences.",
+        "servNOME2": "UI/UX Design",
+        "servDESC2": "I simplify intricate user experience challenges to design cohesive, user-centered solutions that drive engagement and deliver value.",
+        "servNOME3": "Mobile Developer",
+        "servDESC3": "I build intuitive, high-performance mobile applications that seamlessly adapt to user needs, creating responsive, user-friendly experiences across all devices.",
+        "servNOME4": "Data Analyst",
+        "servDESC4": "I turn raw data into actionable insights, leveraging analytics to inform strategic decisions and drive business growth with data-driven solutions.",
+
+        "skillsH3": "My Skills",
+
+        "projH3": "My Projects",
+        "projSPAN": "We develop creative and functional digital solutions, transforming ideas into innovative projects.",
+
+        "histH3": "My Client's Stories",
+        "histSPAN": "We transform your vision into a one-of-a-kind web project that captivates both you and your audience, bringing your ideas to life in a way that truly stands out.",
+        "histP1": "Great service! The project was delivered on time and with high quality. It's a very positive experience!",
+        "histP2": "Absolutely amazing experience! The team was professional and exceeded my expectations. I couldn’t be happier with the results!",
+
+        "workH3": "Let's work together!",
+        "workSPAN": "I design and code beautifully simple things and i love what i do. Just simple like that!",
+        "workH4": "Send Message",
+        "workPLACE1": "Enter your name",
+        "workPLACE2": "Enter your last name",
+        "workPLACE3": "Enter your phone number",
+        "workPLACE4": "Enter your email",
+        "workPLACE5": "Enter your message here",
+        "workTEL": "Phone",
+        "workEMAIL": "Email",
+        "workADDRESS": "Address",
+
+
+        "rodape": "All rights reserved by"
+    }
+}

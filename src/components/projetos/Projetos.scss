@@ -29,7 +29,11 @@
       }
 
       @include respond(tab-port){
-        font-size: 38px;
+          font-size: 40px;
+      }
+
+      @include respond(phone){
+          font-size: 38px;
       }
     }
 

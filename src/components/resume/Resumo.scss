@@ -42,11 +42,15 @@
         -webkit-text-fill-color: transparent;
         white-space: nowrap;
 
-        @include respond(tab-land) {
+        @include respond(tab-land){
             font-size: 42px;
         }
 
         @include respond(tab-port){
+            font-size: 40px;
+        }
+
+        @include respond(phone){
             font-size: 38px;
         }
     }

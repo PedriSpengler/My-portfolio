@@ -1,0 +1,59 @@
+{
+    "translation": {
+        "nav1": "Início",
+        "nav2": "Resumo",
+        "nav3": "Serviços",
+        "nav4": "Habilidades",
+        "nav5": "Projetos",
+        "nav6": "Testemunhas",
+        "nav7": "Contatos",
+
+        "heroH3": "Olá, eu sou Pedri",
+        "heroH1": "Desenvol. Web +",
+        "heroH1br": "UX Designer",
+        "heroH4": "Crio sistemas intuitivos e escaláveis, combinando o design da experiência do utilizador com tecnologias diversas para obter o máximo impacto.",
+        "heroSPAN1": "Anos de Experiência",
+        "heroSPAN2": "Projetos Completos",
+        "heroSPAN3": "Clientes Satisfeitos",
+        "heroSPAN4": "Seguidores",
+
+        "resH3EXP": "Minha Experiência",
+        "resH3EDU": "Minha Formação",
+
+        "servH3": "Meus Serviços",
+        "servSPAN": "Colocamos as suas ideias e, consequentemente, os seus desejos na forma de um projeto Web único que o inspira a si e aos seus clientes.",
+        "servNOME1": "Desenvol. Web",
+        "servDESC1": "Transformo requisitos complexos em soluções Web eficientes e sem descontinuidades, criando capacidade de resposta que proporcionam experiências de utilizador excepcionais.",
+        "servNOME2": "Design UI/UX",
+        "servDESC2": "Simplifico os desafios intrincados da experiência do utilizador para conceber soluções coesas e centradas no utilizador.",
+        "servNOME3": "Desenvol. Móvel",
+        "servDESC3": "Construo aplicações móveis intuitivas e de elevado desempenho que se adaptam perfeitamente às necessidades dos utilizadores, criando experiências receptivas em todos os dispositivos.",
+        "servNOME4": "Analista de Dados",
+        "servDESC4": "Transformo dados brutos em informações acionáveis, impulsionado o crescimento da empresa com soluções baseadas em dados.",
+
+        "skillsH3": "Minhas Habilidades",
+
+        "projH3": "Meus Projetos",
+        "projSPAN": "Desenvolvemos soluções digitais criativas e funcionais, transformando ideias em projetos inovadores.",
+        
+        "histH3": "Meus Clientes",
+        "histSPAN": "Transformamos a sua visão num projeto web único que o cativa a si e ao seu público, dando vida às suas ideias de uma forma que se destaca verdadeiramente.",
+        "histP1": "Excelente serviço! O projeto foi entregue dentro do prazo e com elevada qualidade. É uma experiência muito positiva!",
+        "histP2": "Uma experiência absolutamente fantástica! A equipe foi profissional e excedeu as minhas expectativas. Não podia estar mais satisfeito com os resultados!",
+
+        "workH3": "Vamos trabalhar juntos!",
+        "workSPAN": "Eu desenho e codifico coisas simples e bonitas e adoro o que faço. Simples assim!",
+        "workH4": "Enviar",
+        "workPLACE1": "Digite seu nome",
+        "workPLACE2": "Digite seu último nome",
+        "workPLACE3": "Digite seu n° de celular",
+        "workPLACE4": "Digite seu email",
+        "workPLACE5": "Digite sua mensagem aqui",
+        "workTEL": "Celular",
+        "workEMAIL": "Email",
+        "workADDRESS": "Endereço",
+        
+
+        "rodape": "Todos os direitos reservados por"
+    }
+}

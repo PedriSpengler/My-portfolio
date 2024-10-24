@@ -7,17 +7,31 @@ import EUA from "../../assets/eua.png";
 import BRA from "../../assets/br.png";
 import Aos from "aos";
 import 'aos/dist/aos.css';
-import { useEffect, useState } from "react"; 
+import { useEffect, useState} from "react"; 
+
+import '../../lib/i18n';
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-    const [isUSA, setIsUSA] = useState(false); 
+
+    const { t, i18n: {changeLanguage, language} } = useTranslation()
+    const [currentLanguage, setCurrentLanguage] = useState(language)
+
+    const handleChangeLanguage = () => {
+        const newLanguage = currentLanguage === 'en' ? 'pt' : 'en'
+        changeLanguage(newLanguage)
+        
+        setCurrentLanguage(newLanguage)
+    }
+
+    const [isUSA, setIsUSA] = useState(true); // Começa com USA
 
     useEffect(() => {
         Aos.init({ duration: 1000 });
-    }, []); 
+    }, []);
 
     const handleClick = () => {
-        setIsUSA((prevState) => !prevState); 
+        setIsUSA((prevState) => !prevState);
     };
 
     return (
@@ -25,19 +39,22 @@ const Hero = () => {
             <div className="hero_container wrapper">
                 <div className="hero_left" data-aos="fade-up">
                     <div className="idioma">
-                        <div className={`elipse ${isUSA ? "move-right usa" : ""}`}>
+                        <div className={`elipse ${!isUSA ? "move-right usa" : ""}`}> {/* Muda a condição */}
                             <img
                                 src={isUSA ? EUA : BRA}
                                 alt={isUSA ? "USA flag" : "BRA flag"}
-                                onClick={handleClick}
+                                onClick={() => {
+                                    handleClick();
+                                    handleChangeLanguage();
+                                }}
                             />
                         </div>
                     </div>
-                    <h3>Hi, I'm Pedri</h3>
-                    <h1>Web Developer + <br />
-                    UX Designer
+                    <h3>{t('heroH3')}</h3>
+                    <h1>{t('heroH1')}<br />
+                    {t('heroH1br')}
                     </h1>
-                    <h4>I create intuitive, scalable systems by blending user experience design with full-stack technologies for maximum impact.</h4>
+                    <h4>{t('heroH4')}</h4>
                     <div className="hero_left_references">
                         <a href="/CurriculoAtual.pdf" id="curriculum" download>Download CV</a>
                         <a href="https://www.linkedin.com/in/pedro-spengler-23476b259/" target="_blank" rel="noopener noreferrer">
@@ -63,19 +80,19 @@ const Hero = () => {
                 <div className="hero_description wrapper">
                     <div className="desc" id="yearsDiv">
                         <h3 id="yearsNum">4</h3>
-                        <span id="yearsText">Years Of Experience</span>
+                        <span id="yearsText">{t('heroSPAN1')}</span>
                     </div>
                     <div className="desc" id="projectsDiv">
                         <h3 id="projectsNum">20+</h3>
-                        <span id="projectsText">Projects Completed</span>
+                        <span id="projectsText">{t('heroSPAN2')}</span>
                     </div>
                     <div className="desc" id="happyclientsDiv">
                         <h3 id="happyclientsNum">1.5K</h3>
-                        <span id="happyclientsText">Happy Clients</span>
+                        <span id="happyclientsText">{t('heroSPAN3')}</span>
                     </div>
                     <div className="desc" id="followersDiv">
                         <h3 id="followersNum">1K</h3>
-                        <span id="followersText">Followers</span>
+                        <span id="followersText">{t('heroSPAN4')}</span>
                     </div>
                 </div>
             </div>

@@ -52,11 +52,15 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 20px;
 
-            @include respond(tab-land) {
+            @include respond(tab-land){
                 font-size: 42px;
             }
 
-            @include respond(tab-port) {
+            @include respond(tab-port){
+                font-size: 40px;
+            }
+
+            @include respond(phone){
                 font-size: 38px;
             }
         }

@@ -1,11 +1,18 @@
 import "./Resumo.scss";
 import "aos/dist/aos.css";
+import '../hero/Hero.js';
+
+import '../../lib/i18n';
+import { useTranslation } from "react-i18next";
 
 
 const Resumo = () => {
+
+  const { t } = useTranslation()
+
   return <section id="resume" className="resumo section-padding">
     <div className="section-title experience">
-      <h3 className="h3-exp">My Experience</h3>
+      <h3 className="h3-exp">{t('resH3EXP')}</h3>
       <div className="info-experience">
         <div className="exp-quadro quadro">
           <h4>2022-2024</h4>
@@ -30,7 +37,7 @@ const Resumo = () => {
       </div>
     </div>
     <div className="section-title education">
-      <h3 className="h3-edu">My Education</h3>
+      <h3 className="h3-edu">{t('resH3EDU')}</h3>
       <div className="info-education">
         <div className="edu-quadro quadro">
           <h4>2023</h4>

@@ -22,7 +22,7 @@
   }
 
   .work {
-    width: 41.75rem; // 668px
+    width: 42.75rem; // 668px
     height: 37.5rem; // 600px
     display: flex;
     flex-direction: column;
@@ -43,6 +43,10 @@
       height: auto; // Ajusta a altura automaticamente
     }
 
+    @include respond(phone){
+      text-align: center;
+    }
+
     h3 {
       font-family: Sora;
       font-size: 2.81rem; // 45px
@@ -55,6 +59,16 @@
       @include respond(tab-land){
         font-size: 42px;
     }
+
+    @include respond(tab-port){
+        font-size: 40px;
+    }
+
+    @include respond(phone){
+        font-size: 38px;
+    }
+
+    
     }
 
     span {

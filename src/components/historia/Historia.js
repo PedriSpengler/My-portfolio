@@ -5,13 +5,20 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
+import '../hero/Hero.js';
+
+import '../../lib/i18n';
+import { useTranslation } from "react-i18next";
 
 const Historia = () => {
+
+    const { t } = useTranslation()
+
     return (
         <section id="testimonials" className="historia section-padding">
             <div className="section-title historias">
-                <h3>My Client's Stories</h3>
-                <span>We transform your vision into a one-of-a-kind web project that captivates both you and your audience, bringing your ideas to life in a way that truly stands out.</span>
+                <h3>{t('histH3')}</h3>
+                <span>{t('histSPAN')}</span>
             </div>
             <div className="container">
                 <div className="quadros">
@@ -26,7 +33,7 @@ const Historia = () => {
                             <FontAwesomeIcon icon={faStarRegular} style={{ color: "#350101" }} className="estrela"/>
                         </div>
                         <p>
-                        Great service! The project was delivered on time and with high quality. It's a very positive experience!
+                        {t('histP1')}
                         </p>
                     </div>
                     <div className="quadro2">
@@ -40,7 +47,7 @@ const Historia = () => {
                             <FontAwesomeIcon icon={faStarSolid} style={{ color: "#350101" }} className="estrela"/>
                         </div>
                         <p>
-                        Absolutely amazing experience! The team was professional and exceeded my expectations. I couldn’t be happier with the results!
+                        {t('histP2')}
                         </p>
                     </div>
                 </div>

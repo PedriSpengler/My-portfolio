@@ -23,13 +23,21 @@
         font-style: normal;
         line-height: normal;
         letter-spacing: normal;
-        text-align: left;
+        text-align: center;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
 
         @include respond(tab-land){
             font-size: 42px;
+        }
+
+        @include respond(tab-port){
+            font-size: 40px;
+        }
+
+        @include respond(phone){
+            font-size: 38px;
         }
     }
 

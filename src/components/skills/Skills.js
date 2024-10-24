@@ -1,11 +1,18 @@
 import "./Skills.scss";
 import "aos/dist/aos.css";
 import ImgUIUX from "../../assets/uiux.png";
+import '../hero/Hero.js';
+
+import '../../lib/i18n';
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+
+    const { t } = useTranslation()
+
     return <section id="skills" className="skills section-padding">
         <div className="section-title skills">
-            <h3>My Skills</h3>
+            <h3>{t('skillsH3')}</h3>
             <div className="languages">
                 <div id="box">
                     <img className="html" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""/>

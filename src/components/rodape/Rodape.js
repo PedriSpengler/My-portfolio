@@ -1,8 +1,14 @@
 import './Rodape.scss';
 import Logo from "../../assets/Icon Pedri.png";
 import { useState, useEffect } from 'react';
+import '../hero/Hero.js';
+
+import '../../lib/i18n';
+import { useTranslation } from "react-i18next";
 
 const Rodape = () => {
+
+    const { t } = useTranslation()
     const [showNav, setShowNav] = useState(false);
 
     useEffect(() => {
@@ -31,28 +37,28 @@ const Rodape = () => {
                 <img src={Logo} alt="logo" />
                 <ul className={`${showNav ? "show" : ""}`}>
                     <li onClick={() => setShowNav(false)}>
-                        <a href="#home">Home</a>
+                        <a href="#home">{t('nav1')}</a>
                     </li>
                     <li onClick={() => setShowNav(false)}>
-                        <a href="#resume">Resume</a>
+                        <a href="#resume">{t('nav2')}</a>
                     </li>
                     <li onClick={() => setShowNav(false)}>
-                        <a href="#services">Services</a>
+                        <a href="#services">{t('nav3')}</a>
                     </li>
                     <li onClick={() => setShowNav(false)}>
-                        <a href="#skills">Skills</a>
+                        <a href="#skills">{t('nav4')}</a>
                     </li>
                     <li onClick={() => setShowNav(false)}>
-                        <a href="#projects">Projects</a>
+                        <a href="#projects">{t('nav5')}</a>
                     </li>
                     <li onClick={() => setShowNav(false)}>
-                        <a href="#testimonials">Testimonials</a>
+                        <a href="#testimonials">{t('nav6')}</a>
                     </li>
                     <li onClick={() => setShowNav(false)}>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">{t('nav7')}</a>
                     </li>
                 </ul>
-                <h5>© 2024 All rights reserved by <strong>Pedri Spengler</strong></h5>
+                <h5>© 2024 {t('rodape')} <strong>Pedri Spengler</strong></h5>
             </div>
         </section>
     );
